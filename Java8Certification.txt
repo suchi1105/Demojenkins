@@ -1,0 +1,420 @@
+https://education.oracle.com/java-se-8-programmer-i/pexam_1Z0-808
+https://education.oracle.com/java-se-8-programmer-ii/pexam_1Z0-809
+https://www.examsnet.com/exams/ocjp-certification-practice-online
+https://www.gratisexam.com/oracle/1z0-808-exam/
+https://www.downloadfreepdf.net/1Z0-809-pdf-download.htmlhttps://www.downloadfreepdf.net/1Z0-809-pdf-download.html
+https://www.whizlabs.com/ocajp-scja/?utm_source=google&utm_medium=cpc&utm_campaign=ppc_java&utm_id=ppc_ads&gclid=EAIaIQobChMIh4-3jrzY8wIVzpVLBR3_IQVgEAAYASAAEgIxHPD_BwE
+
+
+
+Array has length variable but String and objects have length() method 
+Case-01
+==========
+int[] a= new int[3];
+a[0]=10;
+a[1]='a';
+a.length //valid
+a.length() //invalid
+
+Case-02
+=============
+int[] a= {10,20,30};
+int [] b= {20};
+
+s1:a=b;
+s2:b=a;
+
+Both s1 and s2 are valid 
+
+case:03:
+==========
+
+byte--short--char ----int --long--float-double
+object of arary interface can be created but not of interface
+
+list [] a= new list[];//valid
+a[0]=new Arraylist();//valid
+list a = new list();//invalid
+
+Object[] obj=new Object[];
+obj[0]=new Integer();//valid
+obj[1]=new String();//valid
+
+
+int a [] = new int[4];
+a[0]=10;
+a[1]='a';
+a[2]=100;//byte int short char are allowed 
+a[3]=10.56;//invalid array is of int type long float and double are not allowed
+a[4]=190.9F;
+0b101
+
+0*2==0
+1*2=2
+2+0+1=3
+
+0xE =
+
+case :04
+=============
+
+
+for(int ii=0;ii<5;ii++)
+{
+	if(ii == 3)
+	{
+		
+		continue;
+		
+	}
+		
+	System.out.println("test"+ii);
+	 saA
+ 
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ese two imports could be removed. In that case, the answer would be option D.
+
+
+
+18. C, D, E. package and import are both optional. If both are present, the order must
+be package, then import, then class. Option A is incorrect because class is before
+package and import. Option B is incorrect because import is before package. Option
+F is incorrect because class is before package. Option G is incorrect because class is
+before import.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+o/p 0 1 2 4
+
+
+
+for(int ii=0;ii<5;ii++)
+{
+	if(ii == 3)
+	{
+		
+		break;
+		
+	}
+		
+	System.out.println("test"+ii);
+	
+	
+}
+
+
+op :0 1 2
+
+
+Day--05:
+===========
+
+Default should not need to be end in switchcase and check break 
+
+Day--01
+=============
+808:			809
+
+class              inner classes annoymous clase
+oops
+
+
+ltijava8vm32.centralindia.cloudapp.azure.com
+student32
+Password@1234
+
+case -05:
+=============
+Main Method :
+
+only one public class cna be there
+public class must have main
+public static void main(String[] args)
+public static final void main(String[] args)
+public static final void main(String[] suchi)
+this args/suchi will take runtime value if it is not there then it will give array index out of bound
+static 	public void main(String... suchi)
+
+//invalid
+public void main(String... suchi)
+
+
+
+Rule for double :
+=============
+
+  // You can add underscare anywhere except:
+        // - beginning of the literal
+        // - the end of literal
+        // - right before the decimal point
+        // - right after the decimal point
+
+double d=1234__678;//valid
+double d=__1234.89;//invalid
+ 
+
+rule for package :
+=======================
+
+error if import is missing
+sequence of import statment :
+1.package name
+2.import 
+3.class
+4.main
+
+ java.util.*
+* means all the classes 
+
+If a class is present in  both the packages
+import java.sql.date;
+import java.util.date;
+
+Date d= new Date();
+
+it will give error because confuse to which date we need 
+java.util.Date d= new Date();
+
+Static import is for static method because if a method is static we are usign like 
+Math.random
+
+but if we use static import then 
+import static java.lang.Math.*;
+
+Numeric Promotion:
+==============================
+Java uses the following Numeric Promotion Rules when applying operators to data types:
+
+If two values have different data types, Java promotes one of the values to the larger of the two data types.
+If one of the values is integral and the other is floating-point, Java promotes the integral value to the floating-point value's data type.
+Smaller data types(byte, short, and char) are promoted to int any time they're used with a Java binary arithmetic operator, even if neither of the operands is int.
+The resulting value will have the same data type as its promoted operands.
+For the third rule, unary operators are excluded from this rule.
+
+For example, applying ++ to a short value results in a short value.
+
+
+String tree= "pine" ;
+	  int count=0;
+	  if(tree.equals("pine"))
+			  {
+		         int height=55;
+		         count=count+1;
+			  }
+	  System.out.println("height::::"+height+count);
+
+
+
+1.        3 types of conversion - assignment conversion, method call conversion and arithmetic promotion
+
+2.        boolean may not be converted to/from any non-boolean type.
+
+3.        Widening conversions accepted. Narrowing conversions rejected.
+
+4.        byte, short can't be converted to char and vice versa.  ( but can be cast )
+
+5.        Arithmetic promotion
+
+5.1     Unary operators
+
+·         if the operand is byte, short or char  {
+								convert it to int;
+                       }
+                else {
+			do nothing; no conversion needed;
+			}
+
+5.2     Binary operators
+
+·         if one operand is double {
+
+all double; convert the other operand to double;
+
+                       }
+
+               else if one operand is float {
+
+all float; convert the other operand to float;
+
+}
+
+else if one operand is long {
+
+all long; convert the other operand to long;
+
+}
+
+else {
+
+all int; convert all to int;
+
+}
+
+sign of numerator will work
+===========================
+int x=-13 and y=-3 
+x/y = -1
+
+
+int x=13 and y=-3 
+x/y = 1
+
+
+
+// Ex1 :
+		/*int x = 13, y = -3;
+		// x%y = +3 or -3? //result always take sign of numerator
+		System.out.println(x % y); 
+		*/
+		
+		
+		//Example 2
+		//What is the data type of x + y?
+
+		    /* double x = 3.21; 
+		      float y = 2.1; */
+		
+		
+		
+	/*	int x1 = 2 * 5 + 3 * 4 - 8; //	 10 + 12 - 8;
+		System.out.println(x1);
+		*/
+		//The logical complement operator, !, 
+		//flips the value of a boolean expression. 
+		
+		
+		/*	boolean x = false;
+			System.out.println(x); // false
+			x = !x;
+			System.out.println(x); // true		
+			*/
+			
+			
+			//Likewise, the negation operator, 
+		//-, reverses the sign of a numeric expression
+			double x = 1.21;
+			System.out.println(x); // 1.21
+			x = -x;
+			System.out.println(x); // -1.21
+			x = -x;
+			System.out.println(x); // 1.21
+			
+			/*int x = !5; // DOES NOT COMPILE
+			boolean y = -true; // DOES NOT COMPILE
+			boolean z = !0; // DOES NOT COMPILE
+*/
+
+LOPS:
+==========
+
+int x = 5;
+
+		if (x == 5) {
+			System.out.println("if-then block");
+		}
+
+		if (x == 5)
+			System.out.println("if-then single line");
+
+		if (x == 5) {
+			System.out.println("if-then-else true branch");
+		} else {
+			System.out.println("if-then-else false branch");
+		}
+
+		if (x != 5)
+			System.out.println("if-then-else single line true branch");
+		else
+			System.out.println("if-then-else single line false branch");
+
+		if (x != 5)
+			System.out.println("if-then-else single line true branch");
+		else {
+			System.out.println("if-then-else single line false branch");
+		}
+
+		if (x > 5) {
+			System.out.println("if-then-else-if-then first if true branch");
+		} else if (x == 5) {
+			System.out.println("if-then-else-if-then second if true branch");
+		} else {
+			System.out.println("if-then-else-if-then block false branch");
+		}
+
+		
+		
+
+		System.out.println("\n----------------------------------------\n");
+		int y=10;
+		switch (y) {
+		case 0: // If the value is 0, it will print all the cases
+			System.out.println("Monday..."); // until it finds a break statement or finishes the structure.
+		default:
+			System.out.println("Weekday."); // Prints only Friday because the value of y is 10, but if the default block
+											// was called,
+		case 10: // in case of no match, Weekday and Friday would be printed (no break on the
+					// default).
+			System.out.println("Friday!");
+			break;
+		}
+
+		System.out.println("\n----------------------------------------\n");
+
+		int bitesOfCheese = 10;
+		int roomInBelly = 5;
+
+		while (bitesOfCheese > 0 && roomInBelly > 0) {
+			--bitesOfCheese;
+			--roomInBelly;
+		}
+
+		System.out.println(bitesOfCheese + " pieces of cheese left.");
+
+		int chips = 10;
+		int roomInPackage = 5;
+
+		do {
+			--chips;
+			--roomInPackage;
+		} while (chips > 0 && roomInPackage > 0);
+
+		System.out.println(chips + " chips left.");
+
+		System.out.println("\n----------------------------------------\n");
+
+
+
+
+
